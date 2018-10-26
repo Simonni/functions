@@ -57,19 +57,20 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-let sumNum = a+b+c
-let sumMul = a*b*c
-let finalStatement = 'Third element: ' + a +  ' and ' + b+ ' and ' + c + ' sum to '+ sumNum
-let finalStat = 'Fourth element: The product of ' + a + ' and ' + b + ' and '+ c + ' is ' + sumMul
+let sumFun = sum() 
+let sumArr = sumFun[0]+c
+let mulFun = multiply()
+let mulArr = mulFun[0] * c
+let finalStatement = 'Third element: ' + a +  ' and ' + b + ' and ' + c + ' sum to '+ sumArr
+let finalStat = 'Fourth element: The product of ' + a + ' and ' + b + ' and '+ c + ' is ' + mulArr
 console.log(finalStatement)
 console.log(finalStat)
-return [sumNum, sumMul]
+return [sumArr, mulArr, finalStatement, finalStat]
 }
 
-sumAndMultiply(4,7,5)
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -87,7 +88,9 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+// for (let i=0; i<testArray.length; i++){
+//   return sum =
+// }
 }
 
 // Here is the test for sumArray(); uncomment it to run it
