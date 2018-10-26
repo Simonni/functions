@@ -57,8 +57,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+let sumNum = a+b+c
+let sumMul = a*b*c
+let finalStatement = 'Third element: ' + a +  ' and ' + b+ ' and ' + c + ' sum to '+ sumNum
+let finalStat = 'Fourth element: The product of ' + a + ' and ' + b + ' and '+ c + ' is ' + sumMul
+console.log(finalStatement)
+console.log(finalStat)
+return [sumNum, sumMul]
 }
+
+sumAndMultiply(4,7,5)
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
