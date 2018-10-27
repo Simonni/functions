@@ -18,7 +18,7 @@ return [sumNum, finalStatement]
  
  
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -40,7 +40,7 @@ return [mulNum, finalStatement]
 multiply(5, 9)
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -53,7 +53,7 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this.
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() fgitunction and see if the test passes.*/
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
@@ -85,19 +85,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-// var testArray = [2, 3, 4]; //eslint-disable-line
+var testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { 
-//   let sum = 0              //eslint-disable-line
-// for (let i=0; i<testArray.length; i++){
-    
-//  }
- 
-// }
+function sumArray(sumArr) {   //eslint-disable-line
+  let addArr1 = sum(sumArr[0], sumArr[1])
+  let addArr2 = sum(addArr1[0], sumArr[2])
+  let statResult = sumArr[0] +','+ sumArr[1] +','+ sumArr[2] + ' was passed in as an array of numbers, and '+ addArr2[0]+ ' is their sum.'
+  console.log(statResult)
+  let finalResult = [addArr2[0], statResult]
+  return [finalResult[0], finalResult[1]]
+}
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
